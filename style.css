@@ -460,10 +460,12 @@ html, body{ font-family: 'Roboto', sans-serif; }
 .meta-plugin__svg{ width: 35px; fill: #ffffff;}
 
 
+.meta-plugin-description{ display: none; text-align: center; margin: 0px; margin-top: 30px; font-size: 9vw; font-weight: 700; color: #e6bb00; transform: translateY(30px);}
+.breakline-h3{ margin: 0px }
 
 @media screen and (max-width: 820px){ .side-content-meta-plugin__h2{ font-size: 40px;} .side-content-meta-plugin__p{ display: none;} .meta-plugin__hitbox{ padding: 0px 10px; } .meta-plugin__svg{ width: 30px;} }
 @media screen and (max-width: 730px){ #latest_news-title{ display: none; } #latest_news-title-br{ display: none; } .side-content-meta-plugin__h2{ writing-mode: vertical-lr; transform: rotate(180deg);} .side-content-meta-plugin__nav{ flex-direction: column; } .meta-plugin__hitbox{ padding: 10px; } }
-@media screen and (max-width: 590px){ .side-content-meta-plugin{ display: none; } .meta-plugin-container{ justify-content: center; align-items: center; }}
+@media screen and (max-width: 590px){ .side-content-meta-plugin{ display: none; } .meta-plugin-container{ justify-content: center; align-items: center; } .meta-plugin-description{ display: block; } }
 
 #meta-plugin-mobile{ display: none; }
 #ig-plugin-illustration{ background: url("img/palestra_sfondo.png") no-repeat center; background-size: cover; background-color: #e6bb00; }

@@ -368,6 +368,19 @@
 
                     function horizontal_scroll__desktop_moving(){ if(mobile_MediaQuery.matches){ user_interaction = true; /*console.log("user_click");*/ return user_interaction; } }
                     function horizontal_scroll__mobile_moving(){ user_interaction = true; /*console.log("user_scroll");*/ return user_interaction; }
+
+
+
+                    /*---------------------------- test ----------------------------*/
+                    var scrollDirection = 1;
+                    function pageScroll() {
+                        horizontal_scroll__bar.scrollBy(scrollDirection, 0); // horizontal and vertical scroll increments
+                        scrolldelay = setTimeout('pageScroll()',20); // scrolls every 50 milliseconds
+                    }
+                    pageScroll();
+                    /*---------------------------- test ----------------------------*/
+
+                    
                     /*------------------------------------------------ AUTOMATED HORIZONTAL SCROLL ------------------------------------------------*/
 
 

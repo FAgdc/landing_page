@@ -31,7 +31,7 @@
         <meta property="og:site_name" content="fitness authority palestra">
 
         <link rel="shourtcut icon" type="img/svg" href="img/fitness-authority-palestra-V2.svg">
-        <meta http-equiv="cache-control" content="no-cache">
+        <!--<meta http-equiv="cache-control" content="no-cache">-->
     </head>
 
     <body>
@@ -145,33 +145,6 @@
                         </ul>
                     </div>
                 </section>
-                <script type="text/javascript">
-                    /*------------------------------------------------ AUTOMATED HORIZONTAL SCROLL ------------------------------------------------*/
-                    const mobile_MediaQuery = window.matchMedia('(max-width: 810px)');
-                    const horizontal_scroll__barX = document.getElementById("horizontal_scroll_brands");
-
-                    var scrollDirection = 1;
-                    function pageScroll(){
-                        
-                        if(mobile_MediaQuery.matches){
-                            
-                            horizontal_scroll__barX.scrollBy(scrollDirection, 0); // horizontal and vertical scroll increments
-                            scrolldelay = setTimeout('pageScroll()',20); // scrolls every 50 milliseconds
-                            if(horizontal_scroll__barX.scrollLeft == horizontal_scroll__barX.scrollWidth - horizontal_scroll__barX.clientWidth){
-                                scrollDirection = -1*scrollDirection;
-                                alert("END LEFT");
-                            }
-                            else if(horizontal_scroll__barX.scrollLeft == 0 && scrollDirection < 0){
-                                scrollDirection = -1*scrollDirection;
-                                alert("END RIGHT");
-                            }
-                            /*console.log(horizontal_scroll__barX.scrollLeft);*/
-
-                        } 
-                    }
-                    pageScroll();
-                    /*------------------------------------------------ AUTOMATED HORIZONTAL SCROLL ------------------------------------------------*/
-                </script>
 
 
 
@@ -609,7 +582,7 @@
 
             </div>
         </main>
-        <script async src="script.js" type="text/javascript"></script>
+        <script async type="text/javascript" src="script.js"></script>
     </body>
 
 </html>

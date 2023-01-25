@@ -327,60 +327,26 @@
 
 
                     /*------------------------------------------------ AUTOMATED HORIZONTAL SCROLL ------------------------------------------------*/
-                    const mobile_MediaQuery = window.matchMedia('(max-width: 825px)');
+                    const mobile_MediaQuery = window.matchMedia('(max-width: 810px)');
                     const horizontal_scroll__bar = document.getElementById("horizontal_scroll_brands");
-                    var horizontal_scroll__length = 0;
-                    var reverse_scroll = false;
-                    var user_interaction = false;
-
-                    /*------ GET HORIZONTAL SCROLL LENGTH ------*/
-                    window.addEventListener("resize", (event) => {
-                        if(checkSafariBrowser === true){
-                            horizontal_scroll__length = horizontal_scroll__bar.scrollWidth;
-                            return horizontal_scroll__length;
-                        }
-                    });
-
-                    window.addEventListener("load", (event) => {
-                        if(checkSafariBrowser === true){
-                            horizontal_scroll__length = horizontal_scroll__bar.scrollWidth;
-                            return horizontal_scroll__length;
-                        }
-                    });
-                    /*------ GET HORIZONTAL SCROLL LENGTH ------*/
-
-                    function automated_horizontal_scroll(){
-                        if(mobile_MediaQuery.matches && checkSafariBrowser === true && user_interaction === false){
-                            
-                            if(reverse_scroll == false){
-                                horizontal_scroll__bar.scroll({ left: horizontal_scroll__length , behavior: 'smooth' });
-                                reverse_scroll = true;
-                                return reverse_scroll;
-                            }
-                            else{
-                                horizontal_scroll__bar.scroll({ left: 0 , behavior: 'smooth' });
-                                reverse_scroll = false;
-                                return reverse_scroll;
-                            }
-                        }
-                    }
-                    setInterval(automated_horizontal_scroll, 4000);
-
-                    function horizontal_scroll__desktop_moving(){ if(mobile_MediaQuery.matches){ user_interaction = true; /*console.log("user_click");*/ return user_interaction; } }
-                    function horizontal_scroll__mobile_moving(){ user_interaction = true; /*console.log("user_scroll");*/ return user_interaction; }
-
-
-
-                    /*---------------------------- test ----------------------------*/
+                    
                     var scrollDirection = 1;
-                    function pageScroll() {
-                        horizontal_scroll__bar.scrollBy(scrollDirection, 0); // horizontal and vertical scroll increments
-                        scrolldelay = setTimeout('pageScroll()',20); // scrolls every 50 milliseconds
+                    function pageScroll(){
+                        if(mobile_MediaQuery.matches){
+                            
+                            horizontal_scroll__bar.scrollBy(scrollDirection, 0); // horizontal and vertical scroll increments
+                            scrolldelay = setTimeout('pageScroll()',20); // scrolls every 50 milliseconds
+                            if(horizontal_scroll__bar.scrollLeft == horizontal_scroll__bar.scrollWidth - horizontal_scroll__bar.clientWidth){
+                                scrollDirection = -1*scrollDirection;
+                            }
+                            else if(horizontal_scroll__bar.scrollLeft == 0 && scrollDirection < 0){
+                                scrollDirection = -1*scrollDirection;
+                            }
+                            /*console.log(horizontal_scroll__bar.scrollLeft);*/
+
+                        } 
                     }
                     pageScroll();
-                    /*---------------------------- test ----------------------------*/
-
-                    
                     /*------------------------------------------------ AUTOMATED HORIZONTAL SCROLL ------------------------------------------------*/
 
 

@@ -1,3 +1,4 @@
+alert("SITO AGGIORNATO");
 /*------------------------------------------------ AUTO CHANGE IMG ------------------------------------------------*/
 const bg_strength = document.getElementById("strength__img");
 const bg_strength__array = ["img/panca_piana.webp", "img/squat_rack.webp", "img/corpo_libero_rack.webp"];

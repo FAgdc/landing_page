@@ -1,4 +1,4 @@
-alert("SITO AGGIORNATO");
+/*alert("SITO AGGIORNATO");*/
 /*------------------------------------------------ AUTO CHANGE IMG ------------------------------------------------*/
 const bg_strength = document.getElementById("strength__img");
 const bg_strength__array = ["img/panca_piana.webp", "img/squat_rack.webp", "img/corpo_libero_rack.webp"];
@@ -119,28 +119,3 @@ function next_slide_carousel(){
 document.getElementById("year_copyright").innerText = new Date().getFullYear();
 
 
-/*------------------------------------------------ AUTOMATED HORIZONTAL SCROLL ------------------------------------------------*/
-const mobile_MediaQuery = window.matchMedia('(max-width: 810px)');
-const horizontal_scroll__bar = document.getElementById("horizontal_scroll_brands");
-
-var scrollDirection = 1;
-function pageScroll(){
-    
-    if(mobile_MediaQuery.matches){
-        
-        horizontal_scroll__bar.scrollBy(scrollDirection, 0); // horizontal and vertical scroll increments
-        scrolldelay = setTimeout('pageScroll()',20); // scrolls every 50 milliseconds
-        if(horizontal_scroll__bar.scrollLeft == horizontal_scroll__bar.scrollWidth - horizontal_scroll__bar.clientWidth){
-            scrollDirection = -1*scrollDirection;
-            /*alert("END LEFT");*/
-        }
-        else if(horizontal_scroll__bar.scrollLeft == 0 && scrollDirection < 0){
-            scrollDirection = -1*scrollDirection;
-            /*alert("END RIGHT");*/
-        }
-        /*console.log(horizontal_scroll__bar.scrollLeft);*/
-
-    } 
-}
-pageScroll();
-/*------------------------------------------------ AUTOMATED HORIZONTAL SCROLL ------------------------------------------------*/

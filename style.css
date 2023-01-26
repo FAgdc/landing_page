@@ -346,7 +346,7 @@ html, body{ font-family: 'Roboto', sans-serif; }
 .chat_btn{ background-color: #505050; }
 .features__span{font-size: 20px; margin: 0; margin-left: 15px; padding: 0; font-weight: 400; }
 .features__svg{ width: 25px; display: block; margin: auto 0 ; fill: #ffffff; /*margin-left: 20px;*/ }
-
+/*
 #features__one{ background: url("img/cardio_fitness_model.webp") no-repeat center; background-size: cover; }
 #features__two{ background: url("img/calisthenics_fitness_model.webp") no-repeat center; background-size: cover; }
 #features__three{ background: url("img/fitness_model_uomo-donna.webp") no-repeat center; background-size: cover; }
@@ -354,9 +354,7 @@ html, body{ font-family: 'Roboto', sans-serif; }
 #strength__img{ background: url("img/panca_piana.webp") no-repeat center; background-size: cover; }
 #isotonic__img{ background: url("img/macchine_isotoniche.webp") no-repeat center; background-size: cover; }
 #cardio__img{ background: url("img/macchine_cardio.webp") no-repeat center; background-size: cover; }
-
-
-#payment__img{ background: url("img/pago_light_pos.webp") no-repeat center; background-size: cover; }
+#payment__img{ background: url("img/pago_light_pos.webp") no-repeat center; background-size: cover; }*/
 /*--------------------------------------- FEATURES LIST ---------------------------------------*/
 
 

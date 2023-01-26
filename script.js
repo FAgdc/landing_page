@@ -7,7 +7,7 @@ var bg_strength__count = 1;
 
 function change_bg_strength(){
     try{
-        bg_strength.style.background = "#000000 url('" + bg_strength__array[bg_strength__count].toString() + "') no-repeat center";
+        bg_strength.src = bg_strength__array[bg_strength__count].toString();
         bg_strength.setAttribute('alt', alt_strength__array[bg_strength__count].toString());
         bg_strength.style.backgroundSize = "cover";
         if(bg_strength__count < ( bg_strength__array.length - 1 ) ){
@@ -121,24 +121,24 @@ document.getElementById("year_copyright").innerText = new Date().getFullYear();
 
 /*------------------------------------------------ AUTOMATED HORIZONTAL SCROLL ------------------------------------------------*/
 const mobile_MediaQuery = window.matchMedia('(max-width: 810px)');
-const horizontal_scroll__barX = document.getElementById("horizontal_scroll_brands");
+const horizontal_scroll__bar = document.getElementById("horizontal_scroll_brands");
 
 var scrollDirection = 1;
 function pageScroll(){
     
     if(mobile_MediaQuery.matches){
         
-        horizontal_scroll__barX.scrollBy(scrollDirection, 0); // horizontal and vertical scroll increments
+        horizontal_scroll__bar.scrollBy(scrollDirection, 0); // horizontal and vertical scroll increments
         scrolldelay = setTimeout('pageScroll()',20); // scrolls every 50 milliseconds
-        if(horizontal_scroll__barX.scrollLeft == horizontal_scroll__barX.scrollWidth - horizontal_scroll__barX.clientWidth){
+        if(horizontal_scroll__bar.scrollLeft == horizontal_scroll__bar.scrollWidth - horizontal_scroll__bar.clientWidth){
             scrollDirection = -1*scrollDirection;
             /*alert("END LEFT");*/
         }
-        else if(horizontal_scroll__barX.scrollLeft == 0 && scrollDirection < 0){
+        else if(horizontal_scroll__bar.scrollLeft == 0 && scrollDirection < 0){
             scrollDirection = -1*scrollDirection;
             /*alert("END RIGHT");*/
         }
-        /*console.log(horizontal_scroll__barX.scrollLeft);*/
+        /*console.log(horizontal_scroll__bar.scrollLeft);*/
 
     } 
 }

@@ -236,7 +236,7 @@ html, body{ font-family: 'Roboto', sans-serif; }
 .logo_list__scroll::-webkit-scrollbar-thumb:hover { background: #313131; }/* Handle on hover */
 
 .logo_list__el{ list-style-type: none; padding: 0px; margin: 0px; margin-right: 20px; }
-.logo_list__img{ display: inline-block; width: auto; height: 80px; /*filter: grayscale(100%);*/ }
+.logo_list__img{ display: inline-block; width: 157px; height: 80px; /*filter: grayscale(100%);*/ }
 .logo_list__scroll > :last-child { margin: 0px; }
 /*--------------------------------------- LOGO LIST ---------------------------------------*/
 

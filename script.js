@@ -126,7 +126,7 @@ const horizontal_scroll__bar = document.getElementById("horizontal_scroll_brands
 var scrollDirection = 1;
 function pageScroll(){
     
-    if(mobile_MediaQuery.matches){
+    if(mobile_MediaQuery.matches && checkSafariBrowser === true){
         
         horizontal_scroll__bar.scrollBy(scrollDirection, 0); // horizontal and vertical scroll increments
         scrolldelay = setTimeout('pageScroll()',20); // scrolls every 50 milliseconds

@@ -280,6 +280,8 @@ html, body{ font-family: 'Roboto', sans-serif; }
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    object-fit: cover;
+    object-position: center;
 }
 .iframe__content{ height: 500px; }
 .features__description{

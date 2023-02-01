@@ -258,8 +258,8 @@ html, body{ font-family: 'Roboto', sans-serif; }
     margin: 0px;
 }
 .logo_list__scroll::-webkit-scrollbar { height: 4px; }/* width */
-.logo_list__scroll::-webkit-scrollbar-track { background: #e2e2e2; /*Safari*/ display: inherit; }/* Track */
-.logo_list__scroll::-webkit-scrollbar-thumb { background: #e6bb00; /*Safari */ -webkit-box-shadow: inset 0 0 6px #e6bb00; }/* Handle */
+.logo_list__scroll::-webkit-scrollbar-track { background: #e2e2e2; }/* Track */
+.logo_list__scroll::-webkit-scrollbar-thumb { background: #e6bb00; }/* Handle */
 .logo_list__scroll::-webkit-scrollbar-thumb:hover { background: #313131; }/* Handle on hover */
 
 .logo_list__el{ list-style-type: none; padding: 0px; margin: 0px; margin-right: 20px; }

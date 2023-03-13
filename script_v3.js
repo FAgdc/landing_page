@@ -1,4 +1,4 @@
-function set_social_plugin_height(){
+window.onload = function set_social_plugin_height(){
 
     //instagram post
     const instagramPostContainer = document.getElementById("instagram_post_container");
@@ -18,10 +18,8 @@ function set_social_plugin_height(){
     console.log("instagram height = " + instagramPost__computedHeight );
     console.log("facebook height = " + facebookPost__computedHeight );
 }
-set_social_plugin_height();
+//set_social_plugin_height();
 
-
-/*test*/
 
 
 

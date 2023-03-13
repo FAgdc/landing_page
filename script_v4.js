@@ -1,3 +1,4 @@
+/*
 function clearCache(){
     if ('caches' in window) {
         caches.keys().then(function(cacheNames) {
@@ -12,7 +13,7 @@ function clearCache(){
     }
 }
 clearCache();
-
+*/
 
 
 

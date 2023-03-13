@@ -1,3 +1,38 @@
+function set_social_plugin_height(){
+
+    //instagram post
+    const instagramPostContainer = document.getElementById("instagram_post_container");
+    const instagramPost = document.getElementById("instagram_post");
+    var instagramPost__computedStyle = window.getComputedStyle(instagramPost);
+    var instagramPost__computedHeight = Math.round(parseFloat(instagramPost__computedStyle.getPropertyValue('height'))) + 4;
+    instagramPostContainer.style.height = instagramPost__computedHeight + "px";
+
+    //facebook post
+    const facebookPostContainer = document.getElementById("facebook_post_container");
+    const facebookPost = document.getElementById("facebook_post");
+    var facebookPost__computedStyle = window.getComputedStyle(facebookPost);
+    var facebookPost__computedHeight = Math.round(parseFloat(facebookPost__computedStyle.getPropertyValue('height'))) + 4;
+    facebookPostContainer.style.height = facebookPost__computedHeight + "px";
+
+    //debug
+    console.log("instagram height = " + instagramPost__computedHeight );
+    console.log("facebook height = " + facebookPost__computedHeight );
+}
+set_social_plugin_height();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*alert("SITO AGGIORNATO");*/
 /*------------------------------------------------ AUTO CHANGE IMG ------------------------------------------------*/
 const bg_strength = document.getElementById("strength__img");

@@ -135,7 +135,6 @@ function prev_slide_carousel(){
             if(bg_carousel__count <= 0){ bg_carousel__count =  carousel_img__array.length - 1; }
             else{ bg_carousel__count--; }
             carousel_img.src = carousel_img__array[bg_carousel__count];
-            carousel_img.setAttribute('alt', alt_carousel__array[bg_carousel__count]);
 
         }catch(error){ alert(error); }
     }
@@ -156,7 +155,6 @@ function next_slide_carousel(){
             if(bg_carousel__count < ( carousel_img__array.length - 1 ) ){ bg_carousel__count++; }
             else{ bg_carousel__count = 0; }
             carousel_img.src = carousel_img__array[bg_carousel__count];
-            carousel_img.setAttribute('alt', alt_carousel__array[bg_carousel__count]);
 
         }catch(error){alert(error);}
     }

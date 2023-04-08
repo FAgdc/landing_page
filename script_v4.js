@@ -115,8 +115,8 @@ input_show_list_checkbox.addEventListener("click", ()=>{
 
 /*------------------------------------------------ CAROUSEL ------------------------------------------------*/
 let carousel_img = document.getElementById("carousel__img__content");
-const carousel_img__array = ["img/palestra_area_cardio.webp", "img/palestra_area_macchine.webp", "img/palestra_area_pesi.webp", "img/palestra_area_strength.webp", "img/palestra_area_esterno.webp"];
-const alt_carousel__array = ["Palesta Area Cardio per Bruciare Grasso", "Palestra macchine isotoniche per sviluppare la muscolatura", "Palestra area pesi liberi per allenamento hardcore", "Palestra area Powerlifting e CrossFit", "Fitness Authority Palestra Trani Esterno"];
+let carousel_img__array = ["img/palestra_area_cardio.webp", "img/palestra_area_macchine.webp", "img/palestra_area_pesi.webp", "img/palestra_area_strength.webp", "img/palestra_area_esterno.webp"];
+let alt_carousel__array = ["Palesta Area Cardio per Bruciare Grasso", "Palestra macchine isotoniche per sviluppare la muscolatura", "Palestra area pesi liberi per allenamento hardcore", "Palestra area Powerlifting e CrossFit", "Fitness Authority Palestra Trani Esterno"];
 var bg_carousel__count = 0;
 
 function prev_slide_carousel(){

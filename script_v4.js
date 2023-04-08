@@ -130,7 +130,9 @@ function prev_slide_carousel(){
 
         console.log(bg_carousel__count);
 
-    }catch(error){}
+    }catch(error){
+        alert(error);
+    }
 }
 function next_slide_carousel(){
     try{

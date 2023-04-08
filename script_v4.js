@@ -124,26 +124,20 @@ function prev_slide_carousel(){
 
         if(bg_carousel__count <= 0){ bg_carousel__count =  carousel_img__array.length - 1; }
         else{ bg_carousel__count--; }
-
         carousel_img.src = carousel_img__array[bg_carousel__count].toString();
         carousel_img.setAttribute('alt', alt_carousel__array[bg_carousel__count].toString());
 
-        /*console.log(bg_carousel__count);*/
-
     }catch(error){
-
         try{
+
             let carousel_img = document.getElementById("carousel__img__content");
             let carousel_img__array = ["img/palestra_area_cardio.webp", "img/palestra_area_macchine.webp", "img/palestra_area_pesi.webp", "img/palestra_area_strength.webp", "img/palestra_area_esterno.webp"];
-            let alt_carousel__array = ["Palesta Area Cardio per Bruciare Grasso", "Palestra macchine isotoniche per sviluppare la muscolatura", "Palestra area pesi liberi per allenamento hardcore", "Palestra area Powerlifting e CrossFit", "Fitness Authority Palestra Trani Esterno"];
-
             if(bg_carousel__count <= 0){ bg_carousel__count =  carousel_img__array.length - 1; }
             else{ bg_carousel__count--; }
+            carousel_img.src = carousel_img__array[bg_carousel__count];
+            carousel_img.setAttribute('alt', alt_carousel__array[bg_carousel__count]);
 
-            carousel_img.src = carousel_img__array[bg_carousel__count].toString();
-            carousel_img.setAttribute('alt', alt_carousel__array[bg_carousel__count].toString());
         }catch(error){ alert(error); }
-
     }
 }
 function next_slide_carousel(){
@@ -151,25 +145,20 @@ function next_slide_carousel(){
 
         if(bg_carousel__count < ( carousel_img__array.length - 1 ) ){ bg_carousel__count++; }
         else{ bg_carousel__count = 0; }
-
         carousel_img.src = carousel_img__array[bg_carousel__count].toString();
         carousel_img.setAttribute('alt', alt_carousel__array[bg_carousel__count].toString());
 
-        /*console.log(bg_carousel__count);*/
-
     }catch(error){
-        
         try{
+
             let carousel_img = document.getElementById("carousel__img__content");
             let carousel_img__array = ["img/palestra_area_cardio.webp", "img/palestra_area_macchine.webp", "img/palestra_area_pesi.webp", "img/palestra_area_strength.webp", "img/palestra_area_esterno.webp"];
-            let alt_carousel__array = ["Palesta Area Cardio per Bruciare Grasso", "Palestra macchine isotoniche per sviluppare la muscolatura", "Palestra area pesi liberi per allenamento hardcore", "Palestra area Powerlifting e CrossFit", "Fitness Authority Palestra Trani Esterno"];
-
             if(bg_carousel__count < ( carousel_img__array.length - 1 ) ){ bg_carousel__count++; }
             else{ bg_carousel__count = 0; }
+            carousel_img.src = carousel_img__array[bg_carousel__count];
+            carousel_img.setAttribute('alt', alt_carousel__array[bg_carousel__count]);
 
-            carousel_img.src = carousel_img__array[bg_carousel__count].toString();
-            carousel_img.setAttribute('alt', alt_carousel__array[bg_carousel__count].toString());
-        }catch(error){ alert(error); }
+        }catch(error){alert(error);}
     }
 }
 /*------------------------------------------------ CAROUSEL ------------------------------------------------*/

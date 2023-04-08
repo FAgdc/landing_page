@@ -132,10 +132,14 @@ function prev_slide_carousel(){
 
             let carousel_img = document.getElementById("carousel__img__content");
             let carousel_img__array = ["img/palestra_area_cardio.webp", "img/palestra_area_macchine.webp", "img/palestra_area_pesi.webp", "img/palestra_area_strength.webp", "img/palestra_area_esterno.webp"];
-            if(bg_carousel__count <= 0){ bg_carousel__count = carousel_img__array.length - 1; }
-            else{ bg_carousel__count--; }
+            if(isNaN(bg_carousel__count)){
+                bg_carousel__count = 5;
+            }
+            else{
+                if(bg_carousel__count <= 0){ bg_carousel__count = carousel_img__array.length - 1; }
+                else{ bg_carousel__count--; }
+            }
             carousel_img.src = carousel_img__array[bg_carousel__count];
-            alert(bg_carousel__count);
 
         }catch(error){ alert(error); }
     }
